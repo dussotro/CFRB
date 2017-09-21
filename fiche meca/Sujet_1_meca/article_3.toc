@@ -1,0 +1,16 @@
+\select@language {english}
+\contentsline {section}{Introduction}{1}{Doc-Start}
+\contentsline {section}{\numberline {1}Attendus du sujet}{1}{section.1}
+\contentsline {paragraph}{- Utilisation d\IeC {\textquoteright }un logiciel de CAO (Solidworks ou Catia ?)}{1}{paragraph*.1}
+\contentsline {paragraph}{Respect d\IeC {\textquoteright }un cahier des charges}{1}{paragraph*.2}
+\contentsline {paragraph}{Cahier des Charges}{1}{paragraph*.3}
+\contentsline {subparagraph}{Condition de placement}{1}{subparagraph*.4}
+\contentsline {subparagraph}{Passage des connectiques}{1}{subparagraph*.5}
+\contentsline {subparagraph}{D\IeC {\'e}montage}{1}{subparagraph*.6}
+\contentsline {subparagraph}{Esth\IeC {\'e}tiques}{1}{subparagraph*.7}
+\contentsline {subparagraph}{Contraintes}{1}{subparagraph*.8}
+\contentsline {section}{\numberline {2}Aides et Directions}{1}{section.2}
+\contentsline {subsection}{\numberline {2.1}CAO sur SolidWorks/Catia}{2}{subsection.2.1}
+\contentsline {subsection}{\numberline {2.2}Usinage}{2}{subsection.2.2}
+\contentsline {section}{Acknowledgments}{2}{section*.9}
+\contentsfinish 

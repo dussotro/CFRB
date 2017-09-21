@@ -1,0 +1,25 @@
+\select@language {english}
+\contentsline {section}{Introduction}{1}{Doc-Start}
+\contentsline {section}{\numberline {1}Proposition d'architecture}{1}{section.1}
+\contentsline {section}{\numberline {2}Attendus du sujet}{2}{section.2}
+\contentsline {subsection}{\numberline {2.1}Attentes Principales}{2}{subsection.2.1}
+\contentsline {paragraph}{R\IeC {\'e}glage du score vis\IeC {\'e}}{2}{paragraph*.2}
+\contentsline {paragraph}{Mesures de temp\IeC {\'e}rature}{2}{paragraph*.3}
+\contentsline {paragraph}{Communication I2C}{2}{paragraph*.4}
+\contentsline {paragraph}{Contr\IeC {\^o}le de Ventilateurs}{2}{paragraph*.5}
+\contentsline {paragraph}{Charge de la batterie}{2}{paragraph*.6}
+\contentsline {paragraph}{Application de visualisation}{2}{paragraph*.7}
+\contentsline {subsection}{\numberline {2.2}Attentes Secondaires / Pour vous amuser}{3}{subsection.2.2}
+\contentsline {paragraph}{Pour le PIMP !}{3}{paragraph*.9}
+\contentsline {paragraph}{Presque Humain(1/2)}{3}{paragraph*.10}
+\contentsline {paragraph}{Presque Humain(2/2)}{3}{paragraph*.11}
+\contentsline {paragraph}{Timekeeper(1/2)}{3}{paragraph*.12}
+\contentsline {paragraph}{Timekeeper(2/2)}{3}{paragraph*.13}
+\contentsline {paragraph}{Pour les sponsors ! ET LE PIIIMP}{3}{paragraph*.14}
+\contentsline {section}{\numberline {3}Aides et Directions}{3}{section.3}
+\contentsline {subsection}{\numberline {3.1}Python}{3}{subsection.3.1}
+\contentsline {subsection}{\numberline {3.2}Arduino/Raspberry}{3}{subsection.3.2}
+\contentsline {subsection}{\numberline {3.3}Protocole I2C}{3}{subsection.3.3}
+\contentsline {subsection}{\numberline {3.4}Electronique}{3}{subsection.3.4}
+\contentsline {section}{Acknowledgments}{3}{section*.15}
+\contentsfinish 

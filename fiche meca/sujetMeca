@@ -1,0 +1,102 @@
+Abstract:
+Dans le cadre du projet coupe de France de robotique, il serait souhaitable de pouvoir visualiser les paramètres de santé du robot en accord avec le sujet d'électronique / informatique de P. Filiol. L'ajout d'un écran et d'un dispositif d'interface serait profitable au projet afin de rendre le robot plus interactif. L'implémentation de l'écran sur le dispositif mobile reste à travailler. Il n'existe aucune installation pré-construite sur le robot et elle reste à définir et implémenter. Il y aurait donc une étude concrète à effectuer pour concevoir ce boîtier.
+
+Introduction:
+L'objectif de ce sujet, en plus d'aider considérablement le projet coupe de France de robotique, est de s'exercer à manipuler des outils numériques comme des logiciels de CAO type Catia ou SolidWorks, ainsi que s'entraîner au développement d'un projet sur un cas concret. De plus, pour les intéressés, c'est une bonne initiation à ce projet qui sera sans doute repris l'année prochaine. Il permettrait aux participants de travailler sur le robot qu'ils utiliseront sans doute plus tard et donc de mieux comprendre son architecture.
+
+Sujet:
+Design et usinage d’un boitier pour emplacement écran d'affichage ainsi que boîtier pour bouton d'arrêt d'urgence et interrupteur de lancement
+
+<Schéma explicatif à faire>
+Attendus du sujet:
+- Utilisation d’un logiciel de CAO (Solidworks ou Catia ?)
+- Respect d’un cahier des charges
+
+Cahier des charges:
+- Le boîtier doit s'incruster dans la surface arrière du robot sans dépassement (cf contraintes de dimensions du robot);
+- Prévoir le passage des différents câbles et d'espaces suffisants pour quelques boutons et LEDs (emplacement dépendant du résultat des élèves de P. Filiol);
+- Prévoir le démontage du boîtier en cas d'opérations de maintenance du système;
+- Esthétiques à discuter avec le groupe (Tout style possible dans le domaine du réalisable et propre).
+- Prévoir l'emplacement et la solidité de la solution technique trouvés pour permettre un arrêt facilité.
+
+Remarques:
+Le boitier modélisé sera dans un premier temps prototypé grâce à une imprimante 3D avant d’être usinée dans le dur. Choix des matériaux libre.
+
+Aides et directions:
+- Tuto CATIA / SolidWorks, Internet ou demande prof de méca;
+- Usinage à voir avec les profs de méca ou FabLAB (poser des questions si nécessaire).
+
+Pour finir:
+Ne pas hésiter à poser des questions durant les séances précues à cet effet, on est là pour esasyer de vous aider si nécessaire (si on ne sait pas faire, on vous guidera vers quelqu'un qui maîtrise le sujet...).
+
+------------------------------------------------------------------------------------------------------------------------------------------
+Abstract:
+Dans le cadre du projet coupe de France de robotique, le robot présenté par le club se doit de respecter les missions qui lui sont afféctés.
+Ces missions comprennent une suite d'instructions à réaliser ainsi qu'une "funny action". Dans ce cadre, l'équipe de 2A du club travaille à la réalisation des missions, mais ce sujet propose de travailler sur la "funny action". Le thème serait "une abeille qui rejoint une fleur". Cette mission est en elle-même très mécanique car elle se doit d'être totalement mécanique sauf en un point, le démarrage.
+
+Introduction:
+Ce sujet va permettre aux étudiants de réfléchir à une solution technique concrète face à une problématique donnée. La difficulté majeure vient du décompte à respecter. Une démonstration de robot dure 90 secondes et la "funny action" doit se lancer au terme de la démonstration pour la conclure. D'où l'importance de ne pas rater ce passage de la démonstration, c'est le point final qui laisse la dernière impression au public et au jury.
+
+Sujet:
+Choix d’une solution technologique pour la funny action et implémentation de la solution sur le système.
+
+Attendus du sujet:
+- Modélisation de la solution en CAO;
+- Respect du cahier des charges.
+- Respecter les étapes de conception
+
+Etapes de conception:
+- 1°: Réaliser un système purement mécanique pouvant démarrer après 90 secondes (utilisation de minuteur mécanique, réalisation de la transition entre le minuteur et un autre système définit par la suite, pratique de test de précision et de fiabilité).
+- 2°: Réaliser le système de funny action qui démarrera après les 90 secondes et réalisera l'action demandée purement mécaniquement.
+
+Cahier des Charges:
+- A définir à partir du 23/09/17, après la sortie du règlement pour quelques ajouts de contraintes;
+- Prendre en compte la dimension maximum du système et sa mise en place sur le robot;
+- Chercher les pièces nécessaire et transmettre cette liste (correctement faite) aux gérants de la trésorerie (président et vice-président);
+- Définir et appliquer une série de test permettant d'assurer le fonctionnement le jour J.
+
+Remarques:
+La "funny action" n'est clairement pas à négliger dans ce projet comme elle pourrait le laisser croire.
+
+Aides et directions:
+- Tuto CATIA / SolidWorks, Internet ou demande prof de méca;
+- Usinage à voir avec les profs de méca ou FabLAB (poser des questions si nécessaire).
+
+Pour finir:
+Ne pas hésiter à poser des questions durant les séances précues à cet effet, on est là pour esasyer de vous aider si nécessaire (si on ne sait pas faire, on vous guidera vers quelqu'un qui maîtrise le sujet...).
+
+------------------------------------------------------------------------------------------------------------------------------------------
+
+Abstract:
+Dans le cadre du projet coupe de France de robotique, le robot présenté par le club se doit de respecter les missions qui lui sont afféctés.
+Pour cela, le robot doit pouvoir repérer son environnement à l'aide de détecteur LIDAR permettant de comprendre et imagé son environnement. Ce système doit être placé à une certaine hauteur à l'aide d'un mât réalisé à cet effet. La problématique est de permettre la mise en place de la balise tout en réduisant au maximum les obstacles à son fonctionnement. Les contraintes sont les règles de conception, toutes les hauteurs sont fixés, il faut donc s'adapter aux contraintes du règlement.
+
+Introduction:
+Ce projet vous permettrait de travailler sur un système, certe simple à première vue, mais complexe à réaliser à cause des nombreuses restrictions de fabrications. Il vous permettrait de vous confronter à une problématique et d'apprendre à trouver et confronter différentes solutions techniques.
+De plus, ce sujet est à réaliser rapidement et de manière professionel. Ce n'est pas un système D que l'on recherche mais un système propre et bien pensé.
+
+Sujet:
+Concevoir un système de mât avec fixation fiable et un support de balise et de scanner LIDAR.
+
+Attendus du sujet:
+- Proposer plusieurs solutions dans un premier temps;
+- confronter théoriquement ces solutions en terme de facilité de production, fiabilité ou prix;
+- réaliser le système pour mise en place sur le robot;
+- respect du cahier des charges.
+
+<Schéma explicatif à faire>
+
+Cahiers des charges:
+- Toutes les hauteurs de robot, mât, support, balise, LIDAR sont fixées et non négociables;
+- Le sysème doit être fiable et ne pas nécessiter des modifications avant le jour J;
+- Permettre le démontage facile du système pour réglage du LIDAR etc. ;
+
+Remarques:
+- Les matériaux sont encore à choisir de manière définitive mais la base à déjà était réfléchi (en discuter avec les membres du club Robotique).
+
+Aides et directions:
+- Dessin technique à l'appui pour définir un support parfaitement conçu;
+- Tuto de CAO à voir avec les profs de Meca ou les gérants du projet.
+
+Pour finir:
+Les étudiants qui participent au projet seront peut etre à-mêmes de vous aider. N'hésitez pas à demander de l'aide ou des conseils que ce soit à l'oral en séance ou par mail. On se fera un plaisir de vous répondre.

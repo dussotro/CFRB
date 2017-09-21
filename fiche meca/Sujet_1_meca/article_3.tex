@@ -1,0 +1,146 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.1 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) 
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
+
+\usepackage[english]{babel} % Specify a different language here - english by default
+
+\usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
+\usepackage[normalem]{ ulem }
+\usepackage{soul}
+
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Coupe de France de Robotique  Sujet Méca A} % Journal information
+\Archive{Nbre optimal : 2+ personnes} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{CDFR 1A : Design et usinage d’un boitier pour emplacement écran d'affichage ainsi que boîtier pour bouton d'arrêt d'urgence et interrupteur de lancement} % Article title
+
+\Authors{DUSSOT Romain, LAURENDIN Olivier} % Authors
+
+
+\Keywords{Catia\&SolidWorks } % Keywords - if you don't want any simply remove all the text between the curly brackets
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\Abstract{Dans le cadre du projet coupe de France de robotique, il serait souhaitable de pouvoir visualiser les paramètres de santé du robot en accord avec le sujet d'électronique / informatique de P. Filiol. L'ajout d'un écran et d'un dispositif d'interface serait profitable au projet afin de rendre le robot plus interactif. L'implémentation de l'écran sur le dispositif mobile reste à travailler. Il n'existe aucune installation pré-construite sur le robot et elle reste à définir et implémenter. Il y aurait donc une étude concrète à effectuer pour concevoir ce boîtier.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+
+\maketitle % Print the title and abstract box
+
+\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+
+L'objectif de ce sujet, en plus d'aider considérablement le projet coupe de France de robotique, est de s'exercer à manipuler des outils numériques comme des logiciels de CAO type Catia ou SolidWorks, ainsi que s'entraîner au développement d'un projet sur un cas concret. De plus, pour les intéressés, c'est une bonne initiation à ce projet qui sera sans doute repris l'année prochaine. Il permettrait aux participants de travailler sur le robot qu'ils utiliseront sans doute plus tard et donc de mieux comprendre son architecture.
+
+
+%------------------------------------------------
+
+\section{Attendus du sujet}
+
+\paragraph{- Utilisation d’un logiciel de CAO (Solidworks ou Catia ?)}
+FP1 : Le but est donc de concevoir sur papier dans un premier puis en numérique dans un second temps des boîtiers/socles permettant la mise en place et la résistance de quelques systèmes.
+\paragraph{Respect d’un cahier des charges}
+FP2 : Les règles de la coupe de France de robotique étant très strictes, nous avons donc un cahier des charges assez précis sur les attendus de ce sujet, que ce soit en terme d'encombrement ou de masse. 
+\paragraph{Cahier des Charges}
+\subparagraph{Condition de placement}
+Le boîtier doit s'incruster dans la surface arrière du robot sans dépassement (cf contraintes de dimensions du robot);
+\subparagraph{Passage des connectiques}
+Prévoir le passage des différents câbles et l'espace suffisant pour quelques boutons et LEDs (emplacement dépendant du résultat des élèves de P. Filiol);
+\subparagraph{Démontage}
+Prévoir le démontage du boîtier en cas d'opérations de maintenance du système;
+\subparagraph{Esthétiques}
+Si le robot pouvait avoir la classe dans cet coupe de divertissement robotique, ce serait bien sympa;
+\subparagraph{Contraintes}
+Le système à réaliser est un affichage avec l'écran et un système d'arrêt d'urgence. Du coup, ces systèmes doivent être assez solide pour ne pas avoir de problème en démonstration, même en cas d'arrêt précipité.
+
+
+%------------------------------------------------
+
+\section{Aides et Directions}
+
+Le boitier modélisé sera dans un premier temps prototypé grâce à une imprimante 3D avant d’être usinée dans le dur. Choix des matériaux libre.
+
+\subsection{CAO sur SolidWorks/Catia}
+
+La plupart des personnes participant à ce projet sont des SPIDs, donc ils n'ont pas forcément eu l'occasion d'utiliser les logiciels de CAO... Mais, certains l'ont utilisé, donc ils peuvent aider si nécessaire. De plus, on trouve des tutoriels complets pour apprendre à utiliser SolidWorks (qui n'est pas utilisé en cours mais qui est plutôt facile) ou Catia (que tout les mécas doivent savoir utiliser et que tout les profs de méca maîtrisent).
+
+\subsection{Usinage}
+
+L'ENSTA Bretagne étant une école de mécanique tout de même, on peut demander à utiliser certaines machines pour appliquer notre usinage. Dans le cas (peu probable) où l'école de peut pas nous aider sur le moment, on trouve des entreprises (comme FabLab) qui permettent à des personnes d'utiliser des machines industriels et même d'apprendre à les utiliser convenablement.
+
+
+%------------------------------------------------
+\phantomsection
+\section*{Pour finir} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
+
+Ne pas hésiter à poser des questions durant les séances prévues à cet effet, on est là pour essayer de vous aider si nécessaire (si on ne sait pas faire, on vous guidera vers quelqu'un qui maîtrise le sujet...)
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{document}

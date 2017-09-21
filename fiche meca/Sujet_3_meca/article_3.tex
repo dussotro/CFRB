@@ -1,0 +1,155 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+% Stylish Article
+% LaTeX Template
+% Version 2.1 (1/10/15)
+%
+% This template has been downloaded from:
+% http://www.LaTeXTemplates.com
+%
+% Original author:
+% Mathias Legrand (legrand.mathias@gmail.com) 
+% With extensive modifications by:
+% Vel (vel@latextemplates.com)
+%
+% License:
+% CC BY-NC-SA 3.0 (http://creativecommons.org/licenses/by-nc-sa/3.0/)
+%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%----------------------------------------------------------------------------------------
+%	PACKAGES AND OTHER DOCUMENT CONFIGURATIONS
+%----------------------------------------------------------------------------------------
+
+\documentclass[fleqn,10pt]{SelfArx} % Document font size and equations flushed left
+
+\usepackage[french]{babel} % Specify a different language here - english by default
+
+\usepackage{lipsum} % Required to insert dummy text. To be removed otherwise
+\usepackage[normalem]{ ulem }
+\usepackage{soul}
+
+%----------------------------------------------------------------------------------------
+%	COLUMNS
+%----------------------------------------------------------------------------------------
+
+\setlength{\columnsep}{0.55cm} % Distance between the two columns of text
+\setlength{\fboxrule}{0.75pt} % Width of the border around the abstract
+
+%----------------------------------------------------------------------------------------
+%	COLORS
+%----------------------------------------------------------------------------------------
+
+\definecolor{color1}{RGB}{0,0,90} % Color of the article title and sections
+\definecolor{color2}{RGB}{0,20,20} % Color of the boxes behind the abstract and headings
+
+%----------------------------------------------------------------------------------------
+%	HYPERLINKS
+%----------------------------------------------------------------------------------------
+
+\usepackage{hyperref} % Required for hyperlinks
+\hypersetup{hidelinks,colorlinks,breaklinks=true,urlcolor=color2,citecolor=color1,linkcolor=color1,bookmarksopen=false,pdftitle={Title},pdfauthor={Author}}
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE INFORMATION
+%----------------------------------------------------------------------------------------
+
+\JournalInfo{Coupe de France de Robotique  Sujet Meca B} % Journal information
+\Archive{Nbre optimal : 3+ personnes} % Additional notes (e.g. copyright, DOI, review/research article)
+
+\PaperTitle{CDFR 1A : Choix d’une solution technologique pour la funny action et implémentation de la solution sur le système.} % Article title
+
+\Authors{DUSSOT Romain, LAURENDIN Olivier} % Authors
+
+
+\Keywords{Catia\&SolidWorks --Dessin Technique } % Keywords - if you don't want any simply remove all the text between the curly brackets
+\newcommand{\keywordname}{Keywords} % Defines the keywords heading name
+
+%----------------------------------------------------------------------------------------
+%	ABSTRACT
+%----------------------------------------------------------------------------------------
+
+\Abstract{Dans le cadre du projet coupe de France de robotique, le robot présenté par le club se doit de respecter les missions qui lui sont affectées.
+Ces missions comprennent une suite d'instructions à réaliser ainsi qu'une "funny action". Dans ce cadre, l'équipe de 2A du club travaille à la réalisation des missions, mais ce sujet propose de travailler sur la "funny action". Le thème serait "une abeille qui rejoint une fleur". Cette mission est en elle-même très mécanique car elle se doit d'être totalement mécanique sauf en un point, le démarrage.}
+
+%----------------------------------------------------------------------------------------
+
+\begin{document}
+
+\flushbottom % Makes all text pages the same height
+
+\maketitle % Print the title and abstract box
+
+\tableofcontents % Print the contents section
+
+\thispagestyle{empty} % Removes page numbering from the first page
+
+%----------------------------------------------------------------------------------------
+%	ARTICLE CONTENTS
+%----------------------------------------------------------------------------------------
+
+\section*{Introduction} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Introduction} % Adds this section to the table of contents
+
+Ce sujet va permettre aux étudiants de réfléchir à une solution technique concrète face à une problématique donnée. La difficulté majeure vient du décompte à respecter. Une démonstration de robot dure 90 secondes et la "funny action" doit se lancer au terme de la démonstration pour la conclure. D'où l'importance de ne pas rater ce passage de la démonstration, c'est le point final qui laisse la dernière impression au public et au jury.
+
+
+%------------------------------------------------
+
+\section{Attendus du sujet}
+
+\paragraph{Utilisation d’un logiciel de CAO}
+FP1 : Le but est donc de concevoir sur papier dans un premier puis en numérique dans un second temps le système dans son entièreté;
+\paragraph{Respect d’un cahier des charges}
+FP2 : Les règles de la coupe de France de robotique étant très strictes, nous avons donc un cahier des charges assez précis sur les attendus de ce sujet, que ce soit en terme d'encombrement ou de masse;
+\paragraph{Respecter les étapes de conception}
+FP3 : Pour ne pas laisser les frêles étudiants dans un monde inconnu. Nous avons pensé à quelques étapes simples de conception qui peuvent se compléter après discussion avec les membres du club.
+
+\paragraph{Etapes de conception}
+\begin{itemize}
+\item Réaliser un système purement mécanique pouvant démarrer après 90 secondes (utilisation de minuteur mécanique, réalisation de la transition entre le minuteur et un autre système définit par la suite, pratique de test de précision et de fiabilité);
+\item Réaliser le système de funny action qui démarrera après les 90 secondes et réalisera l'action demandée purement mécaniquement.
+\end{itemize}
+
+\paragraph{Cahier des Charges}
+\subparagraph{Règles précises}
+A définir à partir du 23/09/17, après la sortie du règlement pour quelques ajouts de contraintes;
+\subparagraph{Dimension}
+Prendre en compte la dimension maximum du système et sa mise en place sur le robot;
+\subparagraph{Commande de pièces}
+Chercher les pièces nécessaires et transmettre cette liste (correctement faite) aux gérants de la trésorerie (président et vice-président);
+\subparagraph{Tests}
+Définir une batterie de test de la totalité du système pour optimiser son fonctionnement le jour J.
+
+
+
+%------------------------------------------------
+
+\section{Aides et Directions}
+
+La "funny action" n'est clairement pas à négliger dans ce projet comme elle pourrait le laisser croire.
+	
+\subsection{CAO sur SolidWorks/Catia}
+
+La plupart des personnes participant à ce projet sont des SPIDs, donc ils n'ont pas forcément eu l'occasion d'utiliser les logiciels de CAO... Mais certains en ont utilisé donc on peut quand même aider un peu. De plus, on trouve en fait des tutoriels très bien faits pour apprendre à utiliser SolidWorks (qui n'est pas utilisé en cours mais qui est plutôt facile) ou Catia (que tout les méca doivent savoir utiliser et que tout les profs de méca maîtrisent).
+
+\subsection{Usinage}
+
+L'ENSTA Bretagne étant une école de mécanique tout de même, on peut demander à utiliser certaines machines pour appliquer notre usinage. Dans le cas (peu probable) où l'école de peut pas nous aider sur le moment, on trouve des entreprises qui permettent à des personnes d'utiliser des machines industriels et même d'apprendre à les utiliser convenablement.
+
+
+%------------------------------------------------
+\phantomsection
+\section*{Pour finir} % The \section*{} command stops section numbering
+
+\addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
+
+Ne pas hésiter à poser des questions durant les séances prévues à cet effet, on est là pour essayer de vous aider si nécessaire (si on ne sait pas faire, on vous guidera vers quelqu'un qui maîtrise le sujet...).
+
+%----------------------------------------------------------------------------------------
+%	REFERENCE LIST
+%----------------------------------------------------------------------------------------
+
+%----------------------------------------------------------------------------------------
+
+\end{document}
