@@ -1,0 +1,201 @@
+Interview Benoit Zerr - CFRB
+----------------------------
+
+Participants:
+  Olivier LAURENDIN
+  Romain DUSSOT
+  Piere FILIOL
+  Mohanad
+
+-----------------------------
+Grp 2
+
+algorithme final ou simulateur final?
+
+- simulateur outil à developper - important pour la réussite
+mais mission aussi importantes
+deux parties à peu près équivalent en terme d'importance
+
+interaction groupe 1?
+
+- interaction par outil de simu, meme outil pour les deux groupes
+améliorations robot par le groupe 1 sur la simulation
+
+simu simple ?
+
+- pour faciliter la tache à l'autre groupe
+ideal, meme prgramme sur le vrai robot et sur le simulateur
+pas de recodage entre simu et réel si possible
+(différence au niveau noeud ROS ?  - script pour changer le code entre les deux manipulations)
+Rq : comment les simulateurs sont-ils utilisés en projet?
+
+environnemnt de simu?
+
+- gazebo, pas mal
+voir si besoin seulement cinématique ou dynamique
+peut-on simuler de la dynamqieu sous gazebo?
+ -> on utilise en suite statique avec calculs et équations dynamiques hors de la simulation
+   mieux de faire les équations de physiques hors de la simulation pour pouvoir ensuite complexifier les calculs
+   moteur fonctionnels
+   (peut etre probleme de collision/détection)
+
+positionnement ?
+
+- gazebo suffisants avec ROS, avec LIDAR et encodeurs
+=> unreal à la fin pour un possible meilleur rendu
+les 3A ont utilisé unity
+(projet chez parrot avec gazebo)
+
+algorithmes?
+
+-pas d'avis pour le moment
+/!\ prendre en compte l'erreur -> chercher des repères après que l'erreur soit trop grandes
+
+Balises?
+-/!\ Doppler, retrouver une position précise prend du temps
+
+Trajectoires avec du path finding?
+- ROS: calcul trajectoire contient des modules déja concu
+certains mouvemnts répétitifs
+estimer le modele de dérive du robot (bruit ou dérive? (estimation possible et correction))
+
+Intervalles?
+- arithmétiques différents mais parfait pour la localisation et positionnement
+a voir si pas trop prise de tete
+spécialiste : Luc JAULIN - a voir les solutions intervalles ou statistiques via KALMAN
+KALMAN, on vise un point
+Intervalle on choisit arbitrairement le centre du "carré", cela garantit que le root est dans la boite
+pour certaine mission, cela suffit, exemple corridor
+(quelqu'un qui aime bien les maths, allez voir Luc pour plus d'aide etc.)
+En 2A, peut etre un peu trop tot, c'est faisable mais peut etre compliqué à réaliser
+Bien gérer "qui fait quoi"...
+
+Stratégie ?
+ -pas seulement un algorithme ? comment faire ses déplacements avec les autres robots à éviter
+ ROS et ses algorithmes, combiner évitement d'obstacles, pathfinding est fait pour route fixe,
+ donc à mettre a jour régulièrement, mission assez simple, mais le pathfinding doit etre mis à jour.
+pas de contact, donc pas de "gene possible"
+track de la position des autres robots ?
+-> réfléion en termes de fonctions d'état en utilisant les balises passives
+probleme balise hauteur/couleur/passive/active
+
+Dkikstra ? transformation en graphe
+- arbre /!\ secteur angulaire - une seule route ou discrétisé en multi-routes
+ peut etre olus sécurisant en passant au centre
+ phase de discrétisation
+ champ de potentiel, vecteur obstacles dans toutes les diretions
+ choisir la bonne méthode en analysant beaucoup de méthode
+
+probleme bras, chaque articulation avec degres de libertés, on peut passer à seulement 4, cinématique inverse
+éviter les bras avec plusieurs articulations
+
+Recommandation travail entre équipe ?
+- commencer par le "terre à terre", la base au début et les missions après
+- capteur sur le robots doive,t etre simulables sur le simulateur
+la mission va permettre de défnir les capteurs mais c'est tout, algorithmie plus tard
+
+ROS ?
+- choses intéressantes comme plateforme de base sur réel et simulé, robot réel qui communique avec le simulateur
+Thomas DEMESO ?
+noeud caméra peut etre retour de caméra, chose possible si ROS des deux cotés
+videos de cours etc.
+communication ROS, permet d'éviter les problemes de réseaun on développe moins de programme bas niveaux
+communication et partage déja fait, publication etc.
+
+création de l'arene sous gazebo ?
+- pas mal, arene physiques deja fait mais rationnel de lle faire en simu
+prendre en main ROS
+simuler des exemples pour apréhender ROS, a voir comme une tache principale
+
+
+découpage des roles ?
+- ca change d'année en année
+singleton ou pair, a voir
+comlpiqué : découpé le travail en élément et répartir 1,2 ou 3
+il faut que chacun est une tache à sa mesure
+définir les taches en fonction des personnes
+on gère la découpe du travail
+ROS -> ROS + gazebo -> missions + ROS + gazebo
+TODO : liste FAST etc.
+/!\ ce n'est pas figé toute l'année , essayer de partir avec un plan large, pas trop détaillé
+il faut réussir à se rendre compte qu'il faut changer de point de vue quand on est dans une impasse
+compenser avec de l'orgnisation et du changement
+
+------------------------------------------------------------------------------
+Fraiseuse disponible
+
+Objectif final?
+- mécanique (CAO Usinage) / bas niveau (conserver les shields)
+idée pour faciliter la tache ?
+peut etre retro ingeenering
+stmd32 pour base mobile et actionneur relié en I2C
+servo, ROS ? deja fait ?
+servo hardware, ne pas echapper à raspberry qui envoie une liste de points
+pas un mode générique de commande ?
+peu de chances que le noeud ROS existe déjà, on va devoir créer la communication
+Possible ? oui. reprendre le programme précédent à encapsuler dans un noeud ROS
+
+=> fabriquer un robot nouveau ? assez nombreux pour envisager cela à partir de O
+permet d'être plus maléable au niveau des missions
+permettre d'avoir deux robots pour pouvoir choisir juste avant la coupe
+
+Suggestion ?
+- Approche d'entreprise, regarder ce que font les autres
+arduino raspberry lego ? solutioin de facilité
+DSpik ? Gilles LEMAYO ?
+abandon si trop compliqué
+robot très basique, carte blanche de conception
+ARM pas de documentation
+arduino mais beaucoup de bug le jour J
+pik possible car documenté
+pic18 = Gilles LEMAYO
+elec puiss  = Yvon GALLOU
+
+
+Rq
+-ROS sur la raspberry, ROS sur raspberry ne tourne pas tres bien
+a moins de USB I2C, carte micro en USB
+gere moins le timing (reste raisonnable)
+i3 ou i5 pour ROS pour faire tourner très vite ! solution Nuke
+soucis de budget peut etre
+mission courte MUC 30 W
+
+accumulateur avec Nuke ? oui. pas de probleme de temps de recharge (4 batteries)
+
+Moteur ALim
+sous DS PIK ? designé u shield ?
+fraiseuse pour faire les µc
+puissance moteur assez dur a mettre au point
+consommer du temps en cas de nouvelles recherches (gain de temps ou pas ?)
+puissance à prendre tout fait
+
+préprototypage avec Arduino - sacrifier 2 sur le bas niveaux
+vu le nombre pas iréalisable de refaire les cartes
+puissance, trouver un truc deja tout fait
+
+
+Organisation ?
+- en cas de probleme: envisager 2 ou 3 solutions  de crises entre nous, puis avec le prof si nécessaire
+reunion imposé par Thomas (deadline/rapport)
+
+Ticket ?
+- acces public si necéssaire (demander Zerr)
+
+Detection robot
+- capteur ultrason , réutiliser les cartes faites par les anciens
+
+Mission etudiant
+
+-2000€ budget de déplacement
+Dispensé de cours
+partiel etc. à rattraper
+
+atelier technique?
+
+- github ?
+- pas encore tout a fait fixé
+- android ?
+présentation de fin d'année
+
+
+voir H. Thomas
