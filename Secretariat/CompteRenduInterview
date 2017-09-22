@@ -1,0 +1,80 @@
+Interview Benoit Zerr - CFRB
+----------------------------
+#--------------------------#
+Remarques générales:
+#--------------------------#
+
+Demande de 2 ordinateurs fixes pour la salle F012, ticket géré par Zerr;
+En cas de problème, ne pas directement aller voir les profs, chercher un peu avant;
+Pour la participation en elle-même, 2000€ alloué à cet effet, nous sommes dispensé de cours ou de partiels si nécessaire;
+        Il faut aller voir GAULTIER au momnet où on a les dates pour gérer les partiels et éviter de devoir aller au rattrapage;
+Au niveau des ateliers techniques au cours de l'année, ils ne sont pas réelement définis, ce qui est fixé:
+        Pas de github, peut etre android pour la culture, le reste à voir;
+Pour la présentation de fin d'année (l'oral, à voir avec H. Thomas);
+Pour les rapports à faire au cours de l'année, bien vérifier les notes sur moodle pour savoir ce qu'il y à faire et avoir le temps de le faire.
+
+Découpage des rôles:
+  A voir entre singletons ou pairs pour travailler
+  Respecter les capactés de chacun au moment de distribuer les tâches;
+  La répartition n'est pas figée tout comme l'est le planning global;
+Il faut réussir à se rendre compte qu'il faut changer de point de vue quand on est dans une impasse et en parler avec le groupe.
+
+#--------------------------#
+Remarques groupe 1:
+#--------------------------#
+
+Référents :  Yvon GALLOU pour electronique de puissance
+              Gilles LEMAILLOT pour le pic
+              Benoit ZERR pour le reste
+
+Travail à réaliser:
+  Créer un nouveau robot, secondaire, de A à Z - utilisation de pic (beaucoup de doc disponibles, spécialiste à l'école), fabrication de shield
+      Approche : regarder ce qui se fait chez les autres pour avoir des idées;
+      Prototypage : faire le travail avec Arduino pour tester les programmes dans un premier temps puis changer la carte;
+      Microcontroleur : Nuke, très puissant avec i3 ou i5 pour le faire tourner à grande vitesse;
+            la mission est courte, une Nuke 30W suffirait pour cela, alimentation avec accumulateurs largement suffisantes;
+      Conseil : prendre une carte de puissance faite qui fonctionne et moduler les autres solutions pour les adapter à celle-ci.
+  Faire la partie mécanique du robot principal;
+  ROS, faire la communication en I2C, créer les noeuds nécessaire (communication, servomoteur, etc.);
+
+Matériel disponibles:
+  Fraiseuse numérique pour faire la mécanique et l'usinage (ne peut pas être utilisé sans formation préalable);
+  Fraiseuse pour microcontroleur (ne peut pas être utilisé sans formation _ voir Yvon GALLOU);
+  Imprimante 3D pour faire des pièces sans nécéssité de contraintes.
+
+#--------------------------#
+Remarques groupe 2:
+#--------------------------#
+
+Référent :  Luc JAULIN pour les algorithmes de position etc.
+            Benoit ZERR pour les simulations et la programmation
+
+Objectifs:
+  La simulation et les algorithmes ont la même importance dans le travail du groupe 2
+
+Interaction:
+L'interaction en termes de travaux avec le groupe 1 se fait par le biais de ROS et de la simulation
+  Il faut donc faire en sorte que tout les programmes soit facilement utilisable avec tout les programmes des deux groupes, soit par un programme neutre, soit par un script qui permettrait de passer d'un groupe à l'autre facilement;
+
+Travail à réaliser:
+  Créer une simulation simple d'interface et d'utilisation qui sera perfectionner dans se physiques au terme du projet;
+      Environnement: Gazebo pour faire le premier jet de la simulation dont le rendu graphique pourra être amélioré via Unreal Engine;
+      Gazebo suffit pour intégrer des équations de cinématiques en prenant en compte des capteurs (LIDAR, ultrasons, encodeurs, etc.)
+      Calcul à faire sans doute en dehors de la simulation pour ne pas la ralentir;
+      A voir les possibles problèmes pour la collision et la physique de la scène.
+      Intégrer l'arène dans le simulateur pour raisonner de manière optimal au moment de faire les missions
+  Intégrer ROS à la simulation pour unifier le mode de travail des groupes, si tout le monde est sur ROS, le passage d'un groupe à l'autre sera plus facile;
+  Définir les algorithmes de missions (cf règles Coupe de France de Robotique).
+
+Planning global conseillé:
+  1°) ROS
+  2°) ROS + Gazebo
+  3°) ROS + Gazebo + Missions
+
+Algorithmes:
+  Pour intégrer le path finding avec le calcul des trajectoires optimales, on dispose de plusieurs possiblités:
+    Utiliser les capteurs et ajuster avec les trajectoires au fur et à mesure;
+    Suivre le déplacements des autres robots en réfléchissant en terme de champ de potentiel de déplacement, et donc recalculer la trajectoire à partir de ces statistiques;
+  Pour le déplacement et la précision de celui-ci, on peut utiliser un algorithme d'intervalle qui permet de gérer un déplacement en décomposant le problème global, ou utiliser un filtre de Kalman pour voir les déplacements de manière statistique et se repérer àprès un certain nombre de manoeuvres. cf JAULIN
+
+Problème à éviter, intégrer un bras articulé car très compliqué à implémenter correctement.
