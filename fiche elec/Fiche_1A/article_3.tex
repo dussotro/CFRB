@@ -106,7 +106,7 @@ La carte centrale sera a priori une Arduino (modèle précis à choisir en fonct
  Les fonctions de communication avec la Raspberry PI ne doivent pas être oubliées (à inclure dans le calcul des pins nécessaires lors du choix de la carte). Pour faciliter l'intégration au robot on se penchera vers le protocole de communication I2C. De nombreuses ressources existent en ligne pour programmer ce genre d'interaction sur Arduino. 
  
  
-L'autre point important du sujet et de réaliser un interface graphique en Python destiné à tourner sur la carte intelligence pour visualiser les données récupérées via I2C (températures des sondes, vitesse des ventilos,points\_prévisionnels,temps restant).La bibliothèque graphique pourra être soit PyQT(utilisé à l'Ensta) ou pygame(C'est le must \^\^). Un aperçu du type d'application souhaité est disponible en fin de fichier. Bien sur tout cela constitue une base, en dehors des points obligatoires vous serez libres d'ajouter d'autres fonctionnalités si cela vous fait rire (voir quelques idées plus bas).
+L'autre point important du sujet et de réaliser un interface graphique en Python destiné à tourner sur la carte intelligence pour visualiser les données récupérées via I2C (températures des sondes, vitesse des ventilos,points prévisionnels,temps restant).La bibliothèque graphique pourra être soit PyQT(utilisé à l'Ensta) ou pygame(C'est le must). Un aperçu du type d'application souhaité est disponible en fin de fichier. Bien sur tout cela constitue une base, en dehors des points obligatoires vous serez libres d'ajouter d'autres fonctionnalités si cela vous fait rire (voir quelques idées plus bas).
 \\ \\ La figure ci dessous récapitule la proposition d'architecture pour le projet(soumis à changement) : 
 
 
@@ -132,7 +132,7 @@ FP4 : La carte devra controler 3 ventilateurs pour la refrigération du robot. O
 \paragraph{Charge de la batterie}
 FP5 : On affichera sur la coque (LED ou visualisateur dans l'esprit de la figure du dessus) la charge approximative de la batterie (pas besoin d'être précis au \% près. ). On utilisera le fait que la batterie se décharge a peu près linéairement et l'on peut avoir l'info sur sa charge en mesurant la tension au borne (avec AnalogRead par exemple).Plus d'info en bas de page.
 \paragraph{Application de visualisation}
-FP6 : Il faudra fournir une application python (Bibliothèques graphique PyGame ou PyQT) affichant toutes les informations reçues par la raspberry pi. Le rendu sera dans le style de la figure 2 (qui se veut purement fonctionnel, libre a vous de faire un style plus travaillé\^\^).
+FP6 : Il faudra fournir une application python (Bibliothèques graphique PyGame ou PyQT) affichant toutes les informations reçues par la raspberry pi. Le rendu sera dans le style de la figure 2 (qui se veut purement fonctionnel, libre a vous de faire un style plus travaillé).
 \begin{figure*}[ht]\centering % Using \begin{figure*} makes the figure take up the entire width of the page
 	\includegraphics[width=\linewidth]{app}
 	\caption{Exemple d'application}
@@ -203,7 +203,7 @@ En vrac , Rechercher les mots clés suivants
 
 \addcontentsline{toc}{section}{Acknowledgments} % Adds this section to the table of contents
 
-Plus que pour la performance le club existe pour s'éclater et apprendre des trucs. Ne pas hésiter à me demander si vous êtes bloqués et de toutes façon les séances sont là pour ça \^\^.
+Plus que pour la performance le club existe pour s'éclater et apprendre des trucs. Ne pas hésiter à me demander si vous êtes bloqués et de toutes façon les séances sont là pour ça.
 
 %----------------------------------------------------------------------------------------
 %	REFERENCE LIST

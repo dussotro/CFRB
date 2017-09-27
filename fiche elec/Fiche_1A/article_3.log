@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.9.19)  19 SEP 2017 11:46
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Arch Linux) (preloaded format=pdflatex 2017.9.19)  25 SEP 2017 09:31
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -1014,22 +1014,6 @@ Package pdftex.def Info: view.jpg  used on input line 100. on input line 100.
 Package pdftex.def Info: Requested size: 500.484pt x 431.51306pt on input line 
 100.
 
-! You can't use a prefix with `end-group character }'.
-<to be read again> 
-                   \egroup 
-l.109 ... à l'Ensta) ou pygame(C'est le must \^\^
-                                                  ). Un aperçu du type d'ap...
-I'll pretend you didn't say \long or \outer or \global or \protected.
-
-! Too many }'s.
-\MT@orig@add@accent ...ctor }\accent #1 #2\egroup 
-                                                  \spacefactor \accent@space...
-l.109 ... à l'Ensta) ou pygame(C'est le must \^\^
-                                                  ). Un aperçu du type d'ap...
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
-
 Overfull \hbox (4.41473pt too wide) in paragraph at lines 109--111
 \OT1/ptm/m/n/10 (-20) restant).La bib-lioth[]eque graphique pourra []etre soit 
 PyQT(utilis[]e
@@ -1044,47 +1028,17 @@ Underfull \hbox (badness 10000) in paragraph at lines 109--111
 
 
 ]
-! You can't use a prefix with `end-group character }'.
-<to be read again> 
-                   \egroup 
-l.135 ...ous de faire un style plus travaillé\^\^
-                                                  ).
-I'll pretend you didn't say \long or \outer or \global or \protected.
-
-! Too many }'s.
-\MT@orig@add@accent ...ctor }\accent #1 #2\egroup 
-                                                  \spacefactor \accent@space...
-l.135 ...ous de faire un style plus travaillé\^\^
-                                                  ).
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
-
 <app.jpeg, id=81, 702.37407pt x 700.86844pt>
 File: app.jpeg Graphic file (type jpg)
 <use app.jpeg>
 Package pdftex.def Info: app.jpeg  used on input line 137. on input line 137.
 Package pdftex.def Info: Requested size: 500.484pt x 499.42743pt on input line 
 137.
-[2 <./view.jpg>]
+ [2 <./view.jpg>]
 Overfull \hbox (10.64969pt too wide) in paragraph at lines 187--188
 []\OT1/ptm/m/n/10 (-20) Raspberry PI cook-book par O'reilly (Ex-em-ple []a l'in
 t[]erieur) 
  []
-
-! You can't use a prefix with `end-group character }'.
-<to be read again> 
-                   \egroup 
-l.206 ...açon les séances sont là pour ça \^\^
-                                                  .
-I'll pretend you didn't say \long or \outer or \global or \protected.
-
-! Too many }'s.
-\MT@orig@add@accent ...ctor }\accent #1 #2\egroup 
-                                                  \spacefactor \accent@space...
-l.206 ...açon les séances sont là pour ça \^\^
-                                                  .
-You've closed more groups than you opened.
-Such booboos are generally harmless, so keep going.
 
 
 AED: lastpage setting LastPage
@@ -1103,17 +1057,17 @@ LaTeX Warning: There were multiply-defined labels.
 Package atveryend Info: Empty hook `AtVeryVeryEnd' on input line 214.
  ) 
 Here is how much of TeX's memory you used:
- 11927 strings out of 492990
- 173929 string characters out of 6138688
- 419621 words of memory out of 5000000
- 15110 multiletter control sequences out of 15000+600000
+ 11924 strings out of 492990
+ 173892 string characters out of 6138688
+ 419630 words of memory out of 5000000
+ 15107 multiletter control sequences out of 15000+600000
  41507 words of font info for 163 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
  43i,12n,49p,1195b,430s stack positions out of 5000i,500n,10000p,200000b,80000s
 {/usr/share/texmf-dist/fonts/enc/dvips/base/8r.enc}</usr/share/texmf-dist/fon
 ts/type1/urw/helvetic/uhvb8a.pfb></usr/share/texmf-dist/fonts/type1/urw/helveti
 c/uhvr8a.pfb></usr/share/texmf-dist/fonts/type1/urw/times/utmr8a.pfb>
-Output written on article_3.pdf (4 pages, 462015 bytes).
+Output written on article_3.pdf (4 pages, 462080 bytes).
 PDF statistics:
  149 PDF objects out of 1000 (max. 8388607)
  125 compressed objects within 2 object streams
