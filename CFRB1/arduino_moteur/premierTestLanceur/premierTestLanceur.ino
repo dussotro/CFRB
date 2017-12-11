@@ -1,3 +1,5 @@
+const int button = 7; // Constante pour la branche 7
+
 const int vitesseMotA = 3; // Constante pour la broche 3
 const int sensMotA = 12; // Constante pour la broche 12
 const int freinMotA = 9; // Constante pour la broche 9
@@ -11,7 +13,7 @@ const int intensiteMotB = A1; // intensité du moteur 1
 void setup()   {
 
   Serial.begin(115200);
-
+  pinMode (button, INPUT); // Broche button configurée pour le button 
   pinMode (vitesseMotA, OUTPUT); // Broche vitesseMotA configurée en sortie
   pinMode (freinMotA, OUTPUT); // Broche freinMotA configurée en sortie
   pinMode (vitesseMotB, OUTPUT); // Broche vitesseMotB configurée en sortie
@@ -28,6 +30,7 @@ void setup()   {
 
 
 void loop() {
+  if 
   //------ test initial du moteur A ----
   //- sens 1
   digitalWrite(sensMotA, LOW); // sens 1
